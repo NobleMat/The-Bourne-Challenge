@@ -2,10 +2,14 @@ import Foundation
 
 protocol MovieListDisplaying: AnyObject {
     func set(title: String)
+    func set(sections: [TableViewSection])
+    func beginRefreshing()
+    func endRefreshing()
 }
 
 protocol MovieListPresenting {
     func displayDidLoad()
+    func refreshData()
 }
 
 final class MovieListPresenter {
@@ -34,6 +38,12 @@ extension MovieListPresenter: MovieListPresenting {
 
     func displayDidLoad() {
         display.set(title: Strings.title.rawValue)
+        fetchMovies()
+    }
+
+    func refreshData() {
+        display.set(sections: [])
+        fetchMovies()
     }
 }
 
@@ -41,15 +51,43 @@ extension MovieListPresenter: MovieListPresenting {
 
 private extension MovieListPresenter {
     enum Strings: String {
-        case title
+        case title = "Movie"
     }
 
     func fetchMovies() {
-        manager.fetchMovies { result in
+        display.beginRefreshing()
+        manager.fetchMovies { [weak self] result in
+            guard let self = self else { return }
             switch result {
-            case .success(let movie): break
-            case .failure: break
+            case .success(let movie): self.set(movie: movie)
+            case .failure: self.setError()
             }
         }
+    }
+
+    func set(movie: Movies) {
+        print(movie.movies)
+        display.set(title: movie.title)
+        display.set(
+            sections: [
+                .init(
+                    items: movie.movies.compactMap { MovieListItem(movie: $0) }
+                ),
+            ]
+        )
+        display.endRefreshing()
+    }
+
+    func setError() {
+        display.set(
+            sections: [
+                .init(
+                    items: [
+                        NoDataItem(text: ""),
+                    ]
+                ),
+            ]
+        )
+        display.endRefreshing()
     }
 }

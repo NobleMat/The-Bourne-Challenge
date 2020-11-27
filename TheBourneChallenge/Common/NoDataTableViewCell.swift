@@ -5,6 +5,7 @@ final class NoDataTableViewCell: UITableViewCell, Reusable {
     @IBOutlet private var noDataTextLabel: UILabel!
 
     func configure(with item: NoDataItem) {
+        contentView.backgroundColor = .viewBackground
         noDataTextLabel.text = item.text
     }
 }

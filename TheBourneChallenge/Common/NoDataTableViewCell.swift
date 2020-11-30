@@ -2,7 +2,12 @@ import UIKit
 
 final class NoDataTableViewCell: UITableViewCell, Reusable {
 
-    @IBOutlet private var noDataTextLabel: UILabel!
+    @IBOutlet private var noDataTextLabel: UILabel! {
+        didSet {
+            noDataTextLabel.font = .semiBoldFont(with: 16)
+            noDataTextLabel.addAccessibility(using: .body)
+        }
+    }
 
     func configure(with item: NoDataItem) {
         contentView.backgroundColor = .viewBackground

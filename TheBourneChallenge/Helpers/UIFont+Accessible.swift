@@ -29,7 +29,7 @@ private extension UIFont {
 
     func scaledFont(using textStyle: UIFont.TextStyle, size: CGFloat) -> UIFont {
         guard let customFont = UIFont(name: fontName, size: size) else { fatalError() }
-        return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: customFont, maximumPointSize: size * textStyle.maximumFontSize)
+        return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: customFont)
     }
 }
 
@@ -78,15 +78,5 @@ private extension NSAttributedString {
         }
         resizedString.endEditing()
         return resizedString
-    }
-}
-
-private extension UIFont.TextStyle {
-
-    var maximumFontSize: CGFloat {
-        switch self {
-        case .largeTitle: return 1.25
-        default: return 2.0
-        }
     }
 }

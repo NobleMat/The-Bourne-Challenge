@@ -27,11 +27,12 @@ struct MovieListItem: CellDisplayable {
 
     let name: String
     let imageUrl: String?
+    let action: ButtonAction?
 
     init(movie: Movie, action: ButtonAction? = nil) {
         name = movie.title
         imageUrl = movie.imageHref
-//        self.action = action
+        self.action = action
     }
 
     func extractCell(from tableView: UITableView, for indexPath: IndexPath) -> UITableViewCell {

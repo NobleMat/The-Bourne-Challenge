@@ -16,6 +16,7 @@ final class MovieListViewController: UIViewController {
             )
             tableView.tableFooterView = UIView()
             tableView.refreshControl = refreshControl
+            tableView.contentInsetAdjustmentBehavior = .never
         }
     }
 
@@ -45,6 +46,9 @@ final class MovieListViewController: UIViewController {
         assert(presenter != nil, "MovieListPresenter should be present")
 
         view.backgroundColor = .backgroundColor
+
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .never
 
         presenter.displayDidLoad()
     }
@@ -88,6 +92,29 @@ extension MovieListViewController: MovieListDisplaying {
             tableView.refreshControl?.endRefreshing()
         }
     }
+
+    func show(detail: Movie) {
+        let detailNavigationController: UINavigationController
+        let detailViewController: MovieDetailViewController
+        if let navigationController = splitViewController?.secondaryViewController as? UINavigationController,
+            let viewController = navigationController.topViewController as? MovieDetailViewController {
+            detailNavigationController = navigationController
+            detailViewController = viewController
+            detailViewController.presenter.update(movie: detail)
+        } else {
+            detailViewController = MovieDetailViewController.fromStoryboard()
+            detailViewController.presenter = MovieDetailPresenter(
+                display: detailViewController,
+                movie: detail
+            )
+            detailNavigationController = UINavigationController(rootViewController: detailViewController)
+        }
+
+        detailViewController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        detailViewController.navigationItem.leftItemsSupplementBackButton = true
+
+        splitViewController?.showDetailViewController(detailNavigationController, sender: nil)
+    }
 }
 
 // MARK: UITableViewDataSource
@@ -111,11 +138,26 @@ extension MovieListViewController: UITableViewDataSource {
 // MARK: UITableViewDelegate
 
 extension MovieListViewController: UITableViewDelegate {
-    
-    
+
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        sections[indexPath.section]
+            .items[indexPath.row]
+            .action?()
+    }
 }
 
-// MARK: Selector
+// MARK: - Selector Helpers
+
 private extension Selector {
     static var refresh = #selector(MovieListViewController.refresh)
+}
+
+// MARK: - UISplitViewController Helpers
+
+extension UISplitViewController {
+
+    var secondaryViewController: UIViewController? {
+        return viewControllers.count > 1 ? viewControllers[1] : nil
+    }
 }

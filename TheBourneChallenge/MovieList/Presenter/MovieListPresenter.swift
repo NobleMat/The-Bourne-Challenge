@@ -5,6 +5,7 @@ protocol MovieListDisplaying: AnyObject {
     func set(sections: [TableViewSection])
     func beginRefreshing()
     func endRefreshing()
+    func show(detail: Movie)
 }
 
 protocol MovieListPresenting {
@@ -52,6 +53,7 @@ extension MovieListPresenter: MovieListPresenting {
 private extension MovieListPresenter {
     enum Strings: String {
         case title = "Movie"
+        case error = "Could not load movie list. Please try again later."
     }
 
     func fetchMovies() {
@@ -66,12 +68,15 @@ private extension MovieListPresenter {
     }
 
     func set(movie: Movies) {
-        print(movie.movies)
         display.set(title: movie.title)
         display.set(
             sections: [
                 .init(
-                    items: movie.movies.compactMap { MovieListItem(movie: $0) }
+                    items: movie.movies.compactMap { movie in
+                        MovieListItem(movie: movie) { [weak self] in
+                            self?.display.show(detail: movie)
+                        }
+                    }
                 ),
             ]
         )
@@ -83,7 +88,7 @@ private extension MovieListPresenter {
             sections: [
                 .init(
                     items: [
-                        NoDataItem(text: ""),
+                        NoDataItem(text: Strings.error.rawValue),
                     ]
                 ),
             ]

@@ -3,31 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2961DEC07014C6EC1CCE7101 /* Pods_TheBourneChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC46B4488D0C02383F22FCE /* Pods_TheBourneChallengeTests.framework */; };
 		7FF13858BC404DFB21493769 /* Pods_TheBourneChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5794D55604669F45E0BDB02 /* Pods_TheBourneChallenge.framework */; };
+		8C047A6C2574C3E000388E2A /* MovieListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A6B2574C3E000388E2A /* MovieListPresenterTests.swift */; };
+		8C047A752574C41A00388E2A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A742574C41A00388E2A /* main.swift */; };
+		8C047A792574C48500388E2A /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A782574C48500388E2A /* TestAppDelegate.swift */; };
+		8C047A7D2574C67000388E2A /* Movie+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A7C2574C67000388E2A /* Movie+Mocks.swift */; };
+		8C047A852574CE6500388E2A /* MovieListItem+Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A842574CE6500388E2A /* MovieListItem+Assert.swift */; };
+		8C047A8B2574CFAE00388E2A /* Movie+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A8A2574CFAE00388E2A /* Movie+Equatable.swift */; };
+		8C047A922574D09C00388E2A /* MovieDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C047A912574D09C00388E2A /* MovieDetailPresenterTests.swift */; };
 		8C0BDF722570753300869043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BDF712570753300869043 /* AppDelegate.swift */; };
-		8C0BDF762570753300869043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BDF752570753300869043 /* ViewController.swift */; };
-		8C0BDF792570753300869043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BDF772570753300869043 /* Main.storyboard */; };
 		8C0BDF7B2570753500869043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BDF7A2570753500869043 /* Assets.xcassets */; };
 		8C0BDF7E2570753500869043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BDF7C2570753500869043 /* LaunchScreen.storyboard */; };
-		8C0BDF892570753500869043 /* TheBourneChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BDF882570753500869043 /* TheBourneChallengeTests.swift */; };
-		8C0BDF942570753500869043 /* TheBourneChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BDF932570753500869043 /* TheBourneChallengeUITests.swift */; };
-		AF21484395F452E6AC93F407 /* Pods_TheBourneChallenge_TheBourneChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF522BC097F32E609A621A /* Pods_TheBourneChallenge_TheBourneChallengeUITests.framework */; };
+		8C771FCB25707AA500F8E8FA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C771FCA25707AA500F8E8FA /* Movie.swift */; };
+		8C771FD825707C5F00F8E8FA /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C771FD425707C5F00F8E8FA /* MovieList.storyboard */; };
+		8C771FD925707C5F00F8E8FA /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C771FD525707C5F00F8E8FA /* MovieListViewController.swift */; };
+		8C771FDB25707C5F00F8E8FA /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C771FD725707C5F00F8E8FA /* MovieListPresenter.swift */; };
+		8C771FEB2570989800F8E8FA /* MovieDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C771FE72570989800F8E8FA /* MovieDetail.storyboard */; };
+		8C771FEC2570989800F8E8FA /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C771FE82570989800F8E8FA /* MovieDetailViewController.swift */; };
+		8C771FEE2570989800F8E8FA /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C771FEA2570989800F8E8FA /* MovieDetailPresenter.swift */; };
+		8C771FF525709A3D00F8E8FA /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C771FF425709A3D00F8E8FA /* MovieManager.swift */; };
+		8C77200125710B2600F8E8FA /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77200025710B2600F8E8FA /* Reusable.swift */; };
+		8C77200525710B4E00F8E8FA /* XIBLodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77200425710B4E00F8E8FA /* XIBLodable.swift */; };
+		8C77200925710B8300F8E8FA /* CellDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77200825710B8300F8E8FA /* CellDisplayable.swift */; };
+		8C77200D25710BCF00F8E8FA /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77200C25710BCF00F8E8FA /* Actions.swift */; };
+		8C77201125710BE100F8E8FA /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77201025710BE100F8E8FA /* TableViewSection.swift */; };
+		8C77201525710C1B00F8E8FA /* UIFont+Accessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77201425710C1B00F8E8FA /* UIFont+Accessible.swift */; };
+		8C77201B25710CAC00F8E8FA /* UIRefreshControl+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77201A25710CAC00F8E8FA /* UIRefreshControl+Default.swift */; };
+		8C77201F25710CE700F8E8FA /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77201E25710CE700F8E8FA /* NoDataTableViewCell.swift */; };
+		8C77202C257110CF00F8E8FA /* StoryboardLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77202B257110CF00F8E8FA /* StoryboardLoading.swift */; };
+		8C772033257112B200F8E8FA /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C772032257112B200F8E8FA /* MovieListTableViewCell.swift */; };
+		8C7720392571134A00F8E8FA /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7720382571134A00F8E8FA /* MovieListTableViewCell.xib */; };
+		8C77203D2571144500F8E8FA /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C77203C2571144500F8E8FA /* NoDataTableViewCell.xib */; };
+		8C772041257114EB00F8E8FA /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */; };
+		8C77205025747C6800F8E8FA /* SplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77204F25747C6800F8E8FA /* SplitViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8C0BDF852570753500869043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C0BDF662570753300869043 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C0BDF6D2570753300869043;
-			remoteInfo = TheBourneChallenge;
-		};
-		8C0BDF902570753500869043 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8C0BDF662570753300869043 /* Project object */;
 			proxyType = 1;
@@ -43,19 +60,42 @@
 		2FAD59B13B465F1E30E2244F /* Pods-TheBourneChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBourneChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-TheBourneChallengeTests/Pods-TheBourneChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		47DF522BC097F32E609A621A /* Pods_TheBourneChallenge_TheBourneChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBourneChallenge_TheBourneChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55897E787D6D572A7B758F5B /* Pods-TheBourneChallenge-TheBourneChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBourneChallenge-TheBourneChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheBourneChallenge-TheBourneChallengeUITests/Pods-TheBourneChallenge-TheBourneChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C047A6B2574C3E000388E2A /* MovieListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenterTests.swift; sourceTree = "<group>"; };
+		8C047A742574C41A00388E2A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8C047A782574C48500388E2A /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		8C047A7C2574C67000388E2A /* Movie+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Mocks.swift"; sourceTree = "<group>"; };
+		8C047A842574CE6500388E2A /* MovieListItem+Assert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieListItem+Assert.swift"; sourceTree = "<group>"; };
+		8C047A8A2574CFAE00388E2A /* Movie+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Equatable.swift"; sourceTree = "<group>"; };
+		8C047A912574D09C00388E2A /* MovieDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenterTests.swift; sourceTree = "<group>"; };
 		8C0BDF6E2570753300869043 /* TheBourneChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBourneChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0BDF712570753300869043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C0BDF752570753300869043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8C0BDF782570753300869043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C0BDF7A2570753500869043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0BDF7D2570753500869043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C0BDF7F2570753500869043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C0BDF842570753500869043 /* TheBourneChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBourneChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C0BDF882570753500869043 /* TheBourneChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBourneChallengeTests.swift; sourceTree = "<group>"; };
 		8C0BDF8A2570753500869043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C0BDF8F2570753500869043 /* TheBourneChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBourneChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C0BDF932570753500869043 /* TheBourneChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBourneChallengeUITests.swift; sourceTree = "<group>"; };
-		8C0BDF952570753500869043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C771FCA25707AA500F8E8FA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8C771FD425707C5F00F8E8FA /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
+		8C771FD525707C5F00F8E8FA /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		8C771FD725707C5F00F8E8FA /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		8C771FE72570989800F8E8FA /* MovieDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetail.storyboard; sourceTree = "<group>"; };
+		8C771FE82570989800F8E8FA /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		8C771FEA2570989800F8E8FA /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		8C771FF425709A3D00F8E8FA /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		8C77200025710B2600F8E8FA /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		8C77200425710B4E00F8E8FA /* XIBLodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBLodable.swift; sourceTree = "<group>"; };
+		8C77200825710B8300F8E8FA /* CellDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayable.swift; sourceTree = "<group>"; };
+		8C77200C25710BCF00F8E8FA /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		8C77201025710BE100F8E8FA /* TableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
+		8C77201425710C1B00F8E8FA /* UIFont+Accessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Accessible.swift"; sourceTree = "<group>"; };
+		8C77201A25710CAC00F8E8FA /* UIRefreshControl+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Default.swift"; sourceTree = "<group>"; };
+		8C77201E25710CE700F8E8FA /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
+		8C77202B257110CF00F8E8FA /* StoryboardLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoading.swift; sourceTree = "<group>"; };
+		8C772032257112B200F8E8FA /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
+		8C7720382571134A00F8E8FA /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
+		8C77203C2571144500F8E8FA /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		8C77204F25747C6800F8E8FA /* SplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDelegate.swift; sourceTree = "<group>"; };
 		AB33C586AE22AD6329886502 /* Pods-TheBourneChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBourneChallenge.release.xcconfig"; path = "Target Support Files/Pods-TheBourneChallenge/Pods-TheBourneChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		B5794D55604669F45E0BDB02 /* Pods_TheBourneChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBourneChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFB002E09F874F1FA5F5D62 /* Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-TheBourneChallenge-TheBourneChallengeUITests/Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,23 +118,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C0BDF8C2570753500869043 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF21484395F452E6AC93F407 /* Pods_TheBourneChallenge_TheBourneChallengeUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C047A6F2574C3F200388E2A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8C047A7C2574C67000388E2A /* Movie+Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8C047A802574C72600388E2A /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				8C047A6B2574C3E000388E2A /* MovieListPresenterTests.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		8C047A832574CE5700388E2A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C047A8A2574CFAE00388E2A /* Movie+Equatable.swift */,
+				8C047A842574CE6500388E2A /* MovieListItem+Assert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8C047A8E2574D06C00388E2A /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8C047A912574D09C00388E2A /* MovieDetailPresenterTests.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
 		8C0BDF652570753300869043 = {
 			isa = PBXGroup;
 			children = (
 				8C0BDF702570753300869043 /* TheBourneChallenge */,
 				8C0BDF872570753500869043 /* TheBourneChallengeTests */,
-				8C0BDF922570753500869043 /* TheBourneChallengeUITests */,
 				8C0BDF6F2570753300869043 /* Products */,
 				91BF8852134ED12CF95CC9A2 /* Pods */,
 				CDC6CC775233452CC36627D8 /* Frameworks */,
@@ -106,7 +170,6 @@
 			children = (
 				8C0BDF6E2570753300869043 /* TheBourneChallenge.app */,
 				8C0BDF842570753500869043 /* TheBourneChallengeTests.xctest */,
-				8C0BDF8F2570753500869043 /* TheBourneChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,12 +177,15 @@
 		8C0BDF702570753300869043 /* TheBourneChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				8C0BDF712570753300869043 /* AppDelegate.swift */,
-				8C0BDF752570753300869043 /* ViewController.swift */,
-				8C0BDF772570753300869043 /* Main.storyboard */,
-				8C0BDF7A2570753500869043 /* Assets.xcassets */,
-				8C0BDF7C2570753500869043 /* LaunchScreen.storyboard */,
 				8C0BDF7F2570753500869043 /* Info.plist */,
+				8C0BDF712570753300869043 /* AppDelegate.swift */,
+				8C047A742574C41A00388E2A /* main.swift */,
+				8C0BDF7A2570753500869043 /* Assets.xcassets */,
+				8C77202425710CF100F8E8FA /* Common */,
+				8C771FF3257099E000F8E8FA /* Helpers */,
+				8C771FC2257079C500F8E8FA /* LaunchScreen */,
+				8C771FE62570988800F8E8FA /* MovieDetail */,
+				8C771FC825707A8900F8E8FA /* MovieList */,
 			);
 			path = TheBourneChallenge;
 			sourceTree = "<group>";
@@ -127,19 +193,120 @@
 		8C0BDF872570753500869043 /* TheBourneChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C0BDF882570753500869043 /* TheBourneChallengeTests.swift */,
 				8C0BDF8A2570753500869043 /* Info.plist */,
+				8C047A782574C48500388E2A /* TestAppDelegate.swift */,
+				8C047A832574CE5700388E2A /* Helpers */,
+				8C047A6F2574C3F200388E2A /* Mocks */,
+				8C047A8E2574D06C00388E2A /* MovieDetail */,
+				8C047A802574C72600388E2A /* MovieList */,
 			);
 			path = TheBourneChallengeTests;
 			sourceTree = "<group>";
 		};
-		8C0BDF922570753500869043 /* TheBourneChallengeUITests */ = {
+		8C771FC2257079C500F8E8FA /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				8C0BDF932570753500869043 /* TheBourneChallengeUITests.swift */,
-				8C0BDF952570753500869043 /* Info.plist */,
+				8C0BDF7C2570753500869043 /* LaunchScreen.storyboard */,
 			);
-			path = TheBourneChallengeUITests;
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		8C771FC825707A8900F8E8FA /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				8C7720312571129B00F8E8FA /* Cells */,
+				8C771FC925707A9600F8E8FA /* API */,
+				8C771FDE25707C6B00F8E8FA /* Presenter */,
+				8C771FE125707C7200F8E8FA /* View */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		8C771FC925707A9600F8E8FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FCA25707AA500F8E8FA /* Movie.swift */,
+				8C771FF425709A3D00F8E8FA /* MovieManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8C771FDE25707C6B00F8E8FA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FD725707C5F00F8E8FA /* MovieListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8C771FE125707C7200F8E8FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FD425707C5F00F8E8FA /* MovieList.storyboard */,
+				8C771FD525707C5F00F8E8FA /* MovieListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C771FE62570988800F8E8FA /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8C77204B2574573900F8E8FA /* Presenter */,
+				8C77204C2574574300F8E8FA /* View */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		8C771FF3257099E000F8E8FA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C77200C25710BCF00F8E8FA /* Actions.swift */,
+				8C77200825710B8300F8E8FA /* CellDisplayable.swift */,
+				8C77200025710B2600F8E8FA /* Reusable.swift */,
+				8C77204F25747C6800F8E8FA /* SplitViewDelegate.swift */,
+				8C77202B257110CF00F8E8FA /* StoryboardLoading.swift */,
+				8C77201025710BE100F8E8FA /* TableViewSection.swift */,
+				8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */,
+				8C77201425710C1B00F8E8FA /* UIFont+Accessible.swift */,
+				8C77201A25710CAC00F8E8FA /* UIRefreshControl+Default.swift */,
+				8C77200425710B4E00F8E8FA /* XIBLodable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8C77202425710CF100F8E8FA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8C77201E25710CE700F8E8FA /* NoDataTableViewCell.swift */,
+				8C77203C2571144500F8E8FA /* NoDataTableViewCell.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8C7720312571129B00F8E8FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C772032257112B200F8E8FA /* MovieListTableViewCell.swift */,
+				8C7720382571134A00F8E8FA /* MovieListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C77204B2574573900F8E8FA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FEA2570989800F8E8FA /* MovieDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8C77204C2574574300F8E8FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FE72570989800F8E8FA /* MovieDetail.storyboard */,
+				8C771FE82570989800F8E8FA /* MovieDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		91BF8852134ED12CF95CC9A2 /* Pods */ = {
@@ -152,7 +319,6 @@
 				020A93A4075C19CB792D5F6F /* Pods-TheBourneChallengeTests.debug.xcconfig */,
 				2FAD59B13B465F1E30E2244F /* Pods-TheBourneChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +345,7 @@
 				8C0BDF6C2570753300869043 /* Resources */,
 				8C0BDFA7257075CB00869043 /* Run SwiftFormat */,
 				8C0BDFA8257075E000869043 /* Run SwiftLint */,
+				7270349DF1BD433E0E51EAA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,25 +375,6 @@
 			productReference = 8C0BDF842570753500869043 /* TheBourneChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8C0BDF8E2570753500869043 /* TheBourneChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C0BDF9E2570753500869043 /* Build configuration list for PBXNativeTarget "TheBourneChallengeUITests" */;
-			buildPhases = (
-				C786A038E7BD8F082BB9B0DC /* [CP] Check Pods Manifest.lock */,
-				8C0BDF8B2570753500869043 /* Sources */,
-				8C0BDF8C2570753500869043 /* Frameworks */,
-				8C0BDF8D2570753500869043 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8C0BDF912570753500869043 /* PBXTargetDependency */,
-			);
-			name = TheBourneChallengeUITests;
-			productName = TheBourneChallengeUITests;
-			productReference = 8C0BDF8F2570753500869043 /* TheBourneChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,10 +388,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					8C0BDF832570753500869043 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 8C0BDF6D2570753300869043;
-					};
-					8C0BDF8E2570753500869043 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 8C0BDF6D2570753300869043;
 					};
@@ -264,7 +408,6 @@
 			targets = (
 				8C0BDF6D2570753300869043 /* TheBourneChallenge */,
 				8C0BDF832570753500869043 /* TheBourneChallengeTests */,
-				8C0BDF8E2570753500869043 /* TheBourneChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,20 +417,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7720392571134A00F8E8FA /* MovieListTableViewCell.xib in Resources */,
+				8C771FEB2570989800F8E8FA /* MovieDetail.storyboard in Resources */,
+				8C77203D2571144500F8E8FA /* NoDataTableViewCell.xib in Resources */,
+				8C771FD825707C5F00F8E8FA /* MovieList.storyboard in Resources */,
 				8C0BDF7E2570753500869043 /* LaunchScreen.storyboard in Resources */,
 				8C0BDF7B2570753500869043 /* Assets.xcassets in Resources */,
-				8C0BDF792570753300869043 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8C0BDF822570753500869043 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C0BDF8D2570753500869043 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,6 +456,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7270349DF1BD433E0E51EAA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheBourneChallenge/Pods-TheBourneChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheBourneChallenge/Pods-TheBourneChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheBourneChallenge/Pods-TheBourneChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8C0BDFA7257075CB00869043 /* Run SwiftFormat */ = {
@@ -377,28 +533,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C786A038E7BD8F082BB9B0DC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TheBourneChallenge-TheBourneChallengeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -406,8 +540,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C0BDF762570753300869043 /* ViewController.swift in Sources */,
 				8C0BDF722570753300869043 /* AppDelegate.swift in Sources */,
+				8C771FDB25707C5F00F8E8FA /* MovieListPresenter.swift in Sources */,
+				8C77200925710B8300F8E8FA /* CellDisplayable.swift in Sources */,
+				8C771FF525709A3D00F8E8FA /* MovieManager.swift in Sources */,
+				8C77200525710B4E00F8E8FA /* XIBLodable.swift in Sources */,
+				8C77201B25710CAC00F8E8FA /* UIRefreshControl+Default.swift in Sources */,
+				8C047A752574C41A00388E2A /* main.swift in Sources */,
+				8C77200D25710BCF00F8E8FA /* Actions.swift in Sources */,
+				8C772033257112B200F8E8FA /* MovieListTableViewCell.swift in Sources */,
+				8C771FEC2570989800F8E8FA /* MovieDetailViewController.swift in Sources */,
+				8C77200125710B2600F8E8FA /* Reusable.swift in Sources */,
+				8C77202C257110CF00F8E8FA /* StoryboardLoading.swift in Sources */,
+				8C77205025747C6800F8E8FA /* SplitViewDelegate.swift in Sources */,
+				8C771FCB25707AA500F8E8FA /* Movie.swift in Sources */,
+				8C77201125710BE100F8E8FA /* TableViewSection.swift in Sources */,
+				8C772041257114EB00F8E8FA /* UIColor+Helpers.swift in Sources */,
+				8C771FEE2570989800F8E8FA /* MovieDetailPresenter.swift in Sources */,
+				8C77201525710C1B00F8E8FA /* UIFont+Accessible.swift in Sources */,
+				8C77201F25710CE700F8E8FA /* NoDataTableViewCell.swift in Sources */,
+				8C771FD925707C5F00F8E8FA /* MovieListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,15 +567,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C0BDF892570753500869043 /* TheBourneChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C0BDF8B2570753500869043 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C0BDF942570753500869043 /* TheBourneChallengeUITests.swift in Sources */,
+				8C047A8B2574CFAE00388E2A /* Movie+Equatable.swift in Sources */,
+				8C047A792574C48500388E2A /* TestAppDelegate.swift in Sources */,
+				8C047A922574D09C00388E2A /* MovieDetailPresenterTests.swift in Sources */,
+				8C047A852574CE6500388E2A /* MovieListItem+Assert.swift in Sources */,
+				8C047A6C2574C3E000388E2A /* MovieListPresenterTests.swift in Sources */,
+				8C047A7D2574C67000388E2A /* Movie+Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,22 +584,9 @@
 			target = 8C0BDF6D2570753300869043 /* TheBourneChallenge */;
 			targetProxy = 8C0BDF852570753500869043 /* PBXContainerItemProxy */;
 		};
-		8C0BDF912570753500869043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8C0BDF6D2570753300869043 /* TheBourneChallenge */;
-			targetProxy = 8C0BDF902570753500869043 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8C0BDF772570753300869043 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C0BDF782570753300869043 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8C0BDF7C2570753500869043 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -587,6 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y9QKHKZ94;
 				INFOPLIST_FILE = TheBourneChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y9QKHKZ94;
 				INFOPLIST_FILE = TheBourneChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,48 +802,6 @@
 			};
 			name = Release;
 		};
-		8C0BDF9F2570753500869043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55897E787D6D572A7B758F5B /* Pods-TheBourneChallenge-TheBourneChallengeUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3Y9QKHKZ94;
-				INFOPLIST_FILE = TheBourneChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nm.TheBourneChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheBourneChallenge;
-			};
-			name = Debug;
-		};
-		8C0BDFA02570753500869043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBFB002E09F874F1FA5F5D62 /* Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3Y9QKHKZ94;
-				INFOPLIST_FILE = TheBourneChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nm.TheBourneChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheBourneChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -732,15 +828,6 @@
 			buildConfigurations = (
 				8C0BDF9C2570753500869043 /* Debug */,
 				8C0BDF9D2570753500869043 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8C0BDF9E2570753500869043 /* Build configuration list for PBXNativeTarget "TheBourneChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C0BDF9F2570753500869043 /* Debug */,
-				8C0BDFA02570753500869043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

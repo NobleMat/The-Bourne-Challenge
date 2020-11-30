@@ -1,6 +1,6 @@
 import UIKit
 
-// MARK: - XIBLodable
+/// A protocol used to get the view from the nib and vice versa
 
 protocol XIBLodable: NSObject {
     static var nib: UINib { get }

@@ -1,5 +1,6 @@
 import UIKit
 
+/// Custom class used to set the splitView delegate
 final class SplitViewDelegate: NSObject, UISplitViewControllerDelegate {
 
     func splitViewController(

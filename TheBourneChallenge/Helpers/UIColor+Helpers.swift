@@ -2,7 +2,8 @@ import UIKit
 
 extension UIColor {
 
-    static var backgroundColor: UIColor {
+    /// The color to be used as the background color of the viewController's view
+    static var viewBackground: UIColor {
         if #available(iOS 13.0, *) {
             return UIColor.systemGroupedBackground
         } else {
@@ -10,7 +11,8 @@ extension UIColor {
         }
     }
 
-    static var viewBackground: UIColor {
+    /// The color to be used as the background color of any views in the foreground
+    static var cellBackground: UIColor {
         if #available(iOS 13.0, *) {
             return UIColor { traitCollection -> UIColor in
                 if traitCollection.userInterfaceStyle == UIUserInterfaceStyle.dark {

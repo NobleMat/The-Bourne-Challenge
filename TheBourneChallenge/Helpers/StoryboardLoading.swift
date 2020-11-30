@@ -9,6 +9,11 @@ extension UIViewController: StoryboardLoadable {}
 
 public extension StoryboardLoadable where Self: UIViewController {
 
+    /// Creates an instance of the ViewController from it's storyboard.
+    /// This function needs the class name and storyboard name to be similar,
+    /// eg. The class name needs to have a suffix of `ViewController`
+    /// - Parameter identifier: The identifier of the viewController as set on the storyboard
+    /// - Returns: A type infered viewController
     static func fromStoryboard(with identifier: String? = nil) -> Self {
         let expectedSuffix: String = "ViewController"
         let description: String = String(describing: self)
@@ -19,6 +24,11 @@ public extension StoryboardLoadable where Self: UIViewController {
         return fromStoryboard(named: storyboardName, with: identifier)
     }
 
+    /// Creates an instance of the ViewController from it's storyboard.
+    /// - Parameters:
+    ///   - storyboardName: The name of the storyboard
+    ///   - identifier: The identifier of the viewController as set on the storyboard
+    /// - Returns: A type infered viewController
     static func fromStoryboard(named storyboardName: String, with identifier: String? = nil) -> Self {
         let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
         let viewController: UIViewController

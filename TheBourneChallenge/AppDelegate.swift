@@ -4,7 +4,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    weak var splitViewDelegate: SplitViewDelegate! {
+    private weak var splitViewDelegate: SplitViewDelegate! {
         return .init()
     }
 

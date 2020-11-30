@@ -13,7 +13,8 @@ final class MovieListTableViewCell: UITableViewCell, Reusable {
     @IBOutlet private var movieImageView: UIImageView!
 
     func configure(with item: MovieListItem) {
-        contentView.backgroundColor = .viewBackground
+        backgroundColor = .cellBackground
+        contentView.backgroundColor = .cellBackground
         titleLabel.text = item.name
 
         accessoryType = .disclosureIndicator

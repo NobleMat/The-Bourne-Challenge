@@ -10,7 +10,7 @@ final class NoDataTableViewCell: UITableViewCell, Reusable {
     }
 
     func configure(with item: NoDataItem) {
-        contentView.backgroundColor = .viewBackground
+        contentView.backgroundColor = .cellBackground
         noDataTextLabel.text = item.text
     }
 }

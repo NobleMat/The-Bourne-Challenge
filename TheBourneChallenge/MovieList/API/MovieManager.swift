@@ -4,6 +4,7 @@ enum MovieManagerError: Error {
     case cannotProcessData
 }
 
+/// A protocol that aids in fetching movies from the backend
 protocol MovieManaging {
     func fetchMovies(completion: @escaping (Result<Movies, MovieManagerError>) -> Void)
 }

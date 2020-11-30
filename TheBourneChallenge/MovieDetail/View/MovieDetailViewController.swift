@@ -32,8 +32,6 @@ final class MovieDetailViewController: UIViewController {
     @IBOutlet private var contentView: UIView!
     @IBOutlet private var imageContainerView: UIView!
 
-    // MARK: Private
-
     // MARK: Public
 
     var presenter: MovieDetailPresenting!
@@ -45,8 +43,8 @@ final class MovieDetailViewController: UIViewController {
 
         assert(presenter != nil, "MovieDetailPresenter should be present")
 
-        view.backgroundColor = UIColor.backgroundColor
-        contentView.backgroundColor = UIColor.viewBackground
+        view.backgroundColor = .viewBackground
+        contentView.backgroundColor = .cellBackground
 
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem

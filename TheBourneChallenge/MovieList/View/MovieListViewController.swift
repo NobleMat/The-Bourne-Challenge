@@ -45,7 +45,7 @@ final class MovieListViewController: UIViewController {
 
         assert(presenter != nil, "MovieListPresenter should be present")
 
-        view.backgroundColor = .backgroundColor
+        view.backgroundColor = .viewBackground
 
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .never

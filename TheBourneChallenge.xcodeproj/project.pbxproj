@@ -34,6 +34,7 @@
 		8C7720392571134A00F8E8FA /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7720382571134A00F8E8FA /* MovieListTableViewCell.xib */; };
 		8C77203D2571144500F8E8FA /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C77203C2571144500F8E8FA /* NoDataTableViewCell.xib */; };
 		8C772041257114EB00F8E8FA /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */; };
+		8C77205025747C6800F8E8FA /* SplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77204F25747C6800F8E8FA /* SplitViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		8C7720382571134A00F8E8FA /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
 		8C77203C2571144500F8E8FA /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
 		8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		8C77204F25747C6800F8E8FA /* SplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDelegate.swift; sourceTree = "<group>"; };
 		AB33C586AE22AD6329886502 /* Pods-TheBourneChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBourneChallenge.release.xcconfig"; path = "Target Support Files/Pods-TheBourneChallenge/Pods-TheBourneChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		B5794D55604669F45E0BDB02 /* Pods_TheBourneChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBourneChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFB002E09F874F1FA5F5D62 /* Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-TheBourneChallenge-TheBourneChallengeUITests/Pods-TheBourneChallenge-TheBourneChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,9 +201,8 @@
 		8C771FE62570988800F8E8FA /* MovieDetail */ = {
 			isa = PBXGroup;
 			children = (
-				8C771FE72570989800F8E8FA /* MovieDetail.storyboard */,
-				8C771FE82570989800F8E8FA /* MovieDetailViewController.swift */,
-				8C771FEA2570989800F8E8FA /* MovieDetailPresenter.swift */,
+				8C77204B2574573900F8E8FA /* Presenter */,
+				8C77204C2574574300F8E8FA /* View */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -212,12 +213,13 @@
 				8C77200C25710BCF00F8E8FA /* Actions.swift */,
 				8C77200825710B8300F8E8FA /* CellDisplayable.swift */,
 				8C77200025710B2600F8E8FA /* Reusable.swift */,
+				8C77204F25747C6800F8E8FA /* SplitViewDelegate.swift */,
 				8C77202B257110CF00F8E8FA /* StoryboardLoading.swift */,
 				8C77201025710BE100F8E8FA /* TableViewSection.swift */,
+				8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */,
 				8C77201425710C1B00F8E8FA /* UIFont+Accessible.swift */,
 				8C77201A25710CAC00F8E8FA /* UIRefreshControl+Default.swift */,
 				8C77200425710B4E00F8E8FA /* XIBLodable.swift */,
-				8C772040257114EB00F8E8FA /* UIColor+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -238,6 +240,23 @@
 				8C7720382571134A00F8E8FA /* MovieListTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C77204B2574573900F8E8FA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FEA2570989800F8E8FA /* MovieDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8C77204C2574574300F8E8FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C771FE72570989800F8E8FA /* MovieDetail.storyboard */,
+				8C771FE82570989800F8E8FA /* MovieDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		91BF8852134ED12CF95CC9A2 /* Pods */ = {
@@ -482,6 +501,7 @@
 				8C771FEC2570989800F8E8FA /* MovieDetailViewController.swift in Sources */,
 				8C77200125710B2600F8E8FA /* Reusable.swift in Sources */,
 				8C77202C257110CF00F8E8FA /* StoryboardLoading.swift in Sources */,
+				8C77205025747C6800F8E8FA /* SplitViewDelegate.swift in Sources */,
 				8C771FCB25707AA500F8E8FA /* Movie.swift in Sources */,
 				8C77201125710BE100F8E8FA /* TableViewSection.swift in Sources */,
 				8C772041257114EB00F8E8FA /* UIColor+Helpers.swift in Sources */,

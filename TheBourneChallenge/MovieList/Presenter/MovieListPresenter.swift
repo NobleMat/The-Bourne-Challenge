@@ -52,7 +52,7 @@ extension MovieListPresenter: MovieListPresenting {
 
 private extension MovieListPresenter {
     enum Strings: String {
-        case title = "Movie"
+        case title = "Movies"
         case error = "Could not load movie list. Please try again later."
     }
 
